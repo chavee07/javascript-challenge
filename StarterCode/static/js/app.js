@@ -16,4 +16,8 @@ function table(data){
 }
         table(tableData);
 
+// console.log(dateButton);
+var dateButton = d3.select("#filter-btn");
+
+
 
