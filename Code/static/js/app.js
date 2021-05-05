@@ -5,7 +5,11 @@ var tableData = data;
 // var dateButton = d3.select("#filter-btn");
 var tbody = d3.select("tbody");
 
+
+
 function table(data){
+    // d3.event.preventDefault();
+
     data.forEach((sighting) => {
         var row = tbody.append("tr");
         Object.entries(sighting).forEach(([key, value]) => {
@@ -15,6 +19,7 @@ function table(data){
     });
 }
         table(tableData);
+
 // function table(data){
 // tableData.forEach((sighting) => {
 //     var row = tbody.append("tr");
